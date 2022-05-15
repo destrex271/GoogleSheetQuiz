@@ -10,10 +10,30 @@ body {
 	font-family: 'Verdana', cursive, sans-serif;
 }
 
+.App{
+	background-color: aliceblue;
+}
+
+.card{
+	border-radius: 50%;
+}
+
 .question{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .option{
 	font-size: 1rem;
+}
+
+.qcont{
+	width: 90% !important;
+}
+
+ul{
+	list-style: none;
+}
+
+.btn{
+	display: block;
 }

@@ -23,14 +23,18 @@ export default function App() {
 		setScore(score+1)
 		console.log(score)
 	}
- 
+
+
+	const getScore = () => {
+		return score
+	}
 
 	return (
-		<div className='App'>
+		<div className='App row'>
 			<h1>Score is {score}</h1>
 			{loadedm && questions.map((question)=>{
 				console.log(question.question)
-				return <QuestionAns question={question.question} options={question.options} corOption={question.correctOption} incScore={incScore} />
+				return <QuestionAns question={question.question} options={question.options} corOption={question.correctOption} incScore={incScore} getScore={getScore} />
 			})}
 		</div>
 	)
